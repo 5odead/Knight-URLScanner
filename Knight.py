@@ -54,7 +54,7 @@ def static_check(url_to_test):
         result_box.insert("end", "⚠️ WARNING: Long URL\n")
     if "@" in url_to_test:
         result_box.insert("end", "⚠️ WARNING: URL Contains '@' (Phishing Risk)\n")
-    if not user_to_test.startswith("https"):
+    if not url_to_test.startswith("https"):
         result_box.insert("end","WARNING: Connection is not secure (Missing HTTPS)\n")
 
 my_label = ctk.CTkLabel(app, text="Hello User", font=("Arial", 20))
