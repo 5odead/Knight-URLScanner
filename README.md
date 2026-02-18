@@ -41,7 +41,6 @@ pip install customtkinter requests
 >
 > 2. Internet connection required for redirect checking.
 >
-> 3. Known bug: Line 42 has variable name typo (`user_to_test` should be `url_to_test`).
 
 #### **Run Knight:**
 ```bash
